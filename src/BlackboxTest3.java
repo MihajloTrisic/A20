@@ -1,25 +1,18 @@
 import org.junit.Test;
 
 import weiser.*;
-public class BlackBoxTest2 {
+public class BlackboxTest3 {
 /**
- * Test wie viele Personen im LKW drinnen sind 4 maximal)
+ * Fehler wenn man Person hinzufügt und gleich wieder entfernt. Wenn es 0 Personen sind keine exception
  */
 	@Test(expected=PersonenException.class)
 	public void Test1() {
 		
 		LKW lkw = new LKW("lkw",4000,1250,4);
 		lkw.einsteigen();
-		lkw.einsteigen();
 		lkw.aussteigen();
-		lkw.einsteigen();
-		lkw.einsteigen();
-		lkw.einsteigen();
-		lkw.einsteigen();
-		lkw.einsteigen();
 	    
 		
 		
 	}
-
 }

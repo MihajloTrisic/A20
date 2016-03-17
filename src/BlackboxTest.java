@@ -5,6 +5,7 @@ public class BlackboxTest {
 
 /**
  * Test Gesamtgewicht 4000, Eigengewicht 1250, Wenn mehr als 4000 fehler)
+ * Eigengewicht wird nicht Mitgezählt
  */
 	@Test(expected=GewichtException.class)
 	public void Test1() {
